@@ -35,7 +35,7 @@ public class Main {
         System.out.println("Il carattere è: " + carattere);
     }
     public static void sommaInt (Integer numero1, Integer numero2) {
-        Integer risultato = numero1+numero2;
+        int risultato = numero1+numero2;
         System.out.println("La somma è: " + risultato);
     }
     public static void carattereObj (Character carattere) {
