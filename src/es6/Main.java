@@ -24,21 +24,26 @@ public class Main {
         carattere(primitivoChar);
         sommaInt(intObj, intObj);
         carattereObj(charObj);
+
+        System.out.println(somma(primitivoInt, primitivoInt));
+        System.out.println(carattere(primitivoChar));
+        System.out.println(sommaInt(intObj, intObj));
+        System.out.println(carattereObj(charObj));
     }
 
 
-    public static void somma (int numero1, int numero2) {
+    public static int somma (int numero1, int numero2) {
         int risultato = numero1+numero2;
-     System.out.println("La somma è: " + risultato);
+     return risultato;
     }
-    public static void carattere (char carattere) {
-        System.out.println("Il carattere è: " + carattere);
+    public static char carattere (char carattere) {
+        return carattere;
     }
-    public static void sommaInt (Integer numero1, Integer numero2) {
-        int risultato = numero1+numero2;
-        System.out.println("La somma è: " + risultato);
+    public static Integer sommaInt (Integer numero1, Integer numero2) {
+        Integer risultato1 = numero1+numero2;
+        return risultato1;
     }
-    public static void carattereObj (Character carattere) {
-        System.out.println("Il carattere è: " + carattere);
+    public static Character carattereObj (Character carattere) {
+        return carattere;
     }
 }
