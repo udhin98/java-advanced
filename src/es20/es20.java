@@ -28,6 +28,8 @@ public class es20 {
 
         if (offsetDateTime1.isEqual(adesso) && offsetDateTime1.isEqual(adesso)) {
             System.out.println("Le date sono uguali a quella attuale");
+        } else {
+            System.out.println("Le date non sono uguali");
         }
     }
 }
