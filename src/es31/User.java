@@ -4,15 +4,19 @@ package es31;
 //        Creare 2 oggetti User di cui creerà un'istanza.
 //        Del primo si stamperanno le informazioni di default, del secondo si cambieranno le informazioni e poi si stamperanno a video
 public class User {
+    private static User user;
+    public static User getInstance() {
+        if (user == null) {
+            user = new User();
+        }
+        return user;
+    }
     private String nome;
     private int eta;
 
     public User() {}
 
-    public User(String nome, int eta) {
-        this.nome = nome;
-        this.eta = eta;
-    }
+
 
     public String getNome() {
         return nome;

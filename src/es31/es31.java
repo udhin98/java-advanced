@@ -5,8 +5,8 @@ package es31;
 //        Del primo si stamperanno le informazioni di default, del secondo si cambieranno le informazioni e poi si stamperanno a video
 public class es31 {
     public static void main(String[] args) {
-        User user1 = new User();
-        User user2 = new User();
+        User user1 = User.getInstance();
+        User user2 = User.getInstance();
 
         System.out.println("Primo utente: ");
         user1.stampaInfo();
@@ -15,6 +15,8 @@ public class es31 {
         user2.setEta(25);
         System.out.println("Secondo utente: ");
         user2.stampaInfo();
+
+        user1.stampaInfo();
 
 
 
